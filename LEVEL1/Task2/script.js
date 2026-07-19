@@ -1,56 +1,48 @@
+function changeColor() {
 
+    let button = document.getElementById("colorBtn");
 
-const colorBtn = document.getElementById("colorBtn");
+    if (button.style.backgroundColor == "green") {
 
-colorBtn.addEventListener("click", function () {
-
-    if (colorBtn.style.backgroundColor === "crimson") {
-
-        colorBtn.style.backgroundColor = "#007bff";
+        button.style.backgroundColor = "#778fa8";
 
     } else {
 
-        colorBtn.style.backgroundColor = "crimson";
+        button.style.backgroundColor = "green";
 
     }
 
-});
-
-
-
-
-
+}
 function showGreeting() {
 
     let hour = new Date().getHours();
 
     if (hour < 12) {
 
-        alert("Good Morning! ☀️");
+        alert("Good Morning!");
 
     }
 
     else if (hour < 18) {
 
-        alert("Good Afternoon! 🌤️");
+        alert("Good Afternoon!");
 
     }
 
     else {
 
-        alert("Good Evening! 🌙");
+        alert("Good Evening!");
 
     }
 
 }
-
 function addNumbers() {
 
-    let num1 = document.getElementById("num1").value;
+    let num1 = Number(document.getElementById("num1").value);
 
-    let num2 = document.getElementById("num2").value;
+    let num2 = Number(document.getElementById("num2").value);
 
-    if (num1 === "" || num2 === "") {
+    if (num1 == "" || num2 == "") {
 
         alert("Please enter both numbers.");
 
@@ -58,9 +50,8 @@ function addNumbers() {
 
     }
 
-    let result = Number(num1) + Number(num2);
+    let sum = num1 + num2;
 
-    document.getElementById("result").innerHTML =
-        "Result = " + result;
+    document.getElementById("result").innerHTML = "Result = " + sum;
 
 }
