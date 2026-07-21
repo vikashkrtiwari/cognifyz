@@ -1,0 +1,12 @@
+.card-img-top{
+    height:220px;
+    object-fit:cover;
+}
+
+.card{
+    border-radius:15px;
+}
+
+.card-body{
+    text-align:center;
+}
